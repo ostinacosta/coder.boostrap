@@ -1,12 +1,279 @@
 /*Esto es un comentario de bloque*/
-ul {
-  list-style: none; }
+/*TIPOGRAFIAS*/
+/*Clases Textos*/
+.textPurple {
+  color: purple; }
 
-ul li {
-  padding: 15px;
-  display: inline-block; }
+.textBlack {
+  color: black; }
 
-ul li a {
-  text-decoration: none;
-  font-size: 16px;
-  color: red; }
+.textWhite {
+  color: white; }
+
+/*Clases Fonts*/
+.negrita {
+  font-weight: bold; }
+
+.textoSlogan {
+  font-size: 40px; }
+
+.textoGrande {
+  font-size: 30px; }
+
+/*Clases Fondos*/
+.backYellow {
+  background: yellow; }
+
+.backPurple {
+  background: purple; }
+
+.backBlack {
+  background: black; }
+
+/*ANIMACIONES*/
+/*Animaciones*/
+.box1 {
+  border: solid;
+  border-color: darkred; }
+
+.linear-gradient {
+  background: linear-gradient(to top, yellow, purple); }
+
+.transform:hover {
+  transform: translate(10px 20px);
+  cursor: pointer; }
+
+.rotate:hover {
+  transform: rotateY(180deg);
+  cursor: pointer;
+  transition: 2s; }
+
+/*ESTRUCTURA*/
+body {
+  width: 100%;
+  height: 100vh; }
+
+h2 {
+  color: darkred;
+  padding: 5px; }
+
+h3 {
+  color: black;
+  padding: 5px; }
+
+/*Etiquetas GRID*/
+/*Grid 1*/
+#Grid {
+  display: grid;
+  grid-template-areas: "cabeza cabeza"  "cuerpo cuerpo"  "pie pie";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-gap: 10px; }
+
+header {
+  grid-area: cabeza;
+  padding: 10px; }
+
+main {
+  grid-area: cuerpo;
+  padding: 10px; }
+
+footer {
+  grid-area: pie;
+  padding: 10px; }
+
+/*Grid 2*/
+.grid2 {
+  display: grid;
+  grid-template-areas: "logo . nav nav nav";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  grid-gap: 10px; }
+
+nav {
+  display: flex;
+  justify-content: center;
+  grid-area: nav;
+  justify-self: center;
+  font-size: 20px;
+  padding: 10px; }
+
+img#logo {
+  grid-area: logo;
+  justify-self: end; }
+
+/*Grid 3*/
+.Grid3 {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "slogan  banner" "division1 division1"; }
+
+.slogan {
+  grid-area: slogan;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 1;
+  grid-row-end: 2;
+  justify-self: center;
+  align-self: center; }
+
+.banner {
+  grid-area: banner;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2; }
+
+.division1 {
+  grid-area: division1;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3; }
+
+/*BOOTSTRAP*/
+/*CSS CARRUSEL*/
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a; }
+
+/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem; }
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10; }
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem; }
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem; }
+
+/* MARKETING CONTENT
+  -------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center; }
+
+.marketing h2 {
+  font-weight: 400; }
+
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem; }
+
+/* rtl:end:ignore */
+/* Featurettes
+  ------------------------- */
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */ }
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem; }
+
+/* RESPONSIVE CSS
+  -------------------------------------------------- */
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4; }
+  .featurette-heading {
+    font-size: 50px; } }
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem; } }
+
+/*termina css de carrusel*/
+/*Css features*/
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15); }
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor; }
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: .75rem; }
+
+.icon-link {
+  display: inline-flex;
+  align-items: center; }
+
+.icon-link > .bi {
+  margin-top: .125rem;
+  margin-left: .125rem;
+  transition: transform .25s ease-in-out;
+  fill: currentColor; }
+
+.icon-link:hover > .bi {
+  transform: translate(0.25rem); }
+
+.icon-square {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border-radius: .75rem; }
+
+.rounded-4 {
+  border-radius: .5rem; }
+
+.rounded-5 {
+  border-radius: 1rem; }
+
+.text-shadow-1 {
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25); }
+
+.text-shadow-2 {
+  text-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25); }
+
+.text-shadow-3 {
+  text-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25); }
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+/*Termina Css features*/

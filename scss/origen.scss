@@ -2,17 +2,21 @@
 /*Esto es un comentario de bloque*/
 
 
+//Import
+@import "tipografias";
+@import "animaciones";
+@import "estructura";
+@import "bootstrap"
+
+
+
+
+
+
 //Anidamiento
 
-ul{
-    list-style: none;
-}
-ul li{
-    padding: 15px;
-    display: inline-block;
-}
-ul li a{
-    text-decoration: none;
-    font-size: 16px;
-    color: red;
-}
+
+
+
+
+
